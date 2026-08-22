@@ -41,7 +41,7 @@ while True:
                 sys.exit()      
         elif confirmacao.upper() == "N":
             print("que bom que não quer sair, iremos continuar aqui!")
-            input("\nenter para voltar ao menu!") # Uma pausa para o usuário ler a mensagem
+            input("\nenter para voltar ao menu!") 
             
     else:
         print("opção inválida, digite apenas os números indicados.")
