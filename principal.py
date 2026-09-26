@@ -2,19 +2,35 @@ import os
 import sys
 import platform
 
-def test():
-    print("\nexecutando o teste 1...")
+def teste1():
+    print("\nexecutando o teste de letras...")
+    print("\nabcdefghijklmnopqrstuvwxyz")
+    print("\nteste executado! voltando")
+def teste2():
+    print("\nexecutando o teste de multiplas linhas...")
+    print('''
+    multiplas 
+    linhas''')
     print("\nteste executado! voltando...")
-def test2():
-    print("\nexecutando o teste 2...")
+def teste3():
+    print("\nexecutando teste de numeros...")
+    print("1234567890")
     print("\nteste executado! voltando...")
+def teste4():
+    print("\nexecutando o teste de numeros de multiplas linhas")
+    print('''
+    1234567890
+    123456789
+    12345678
+    ...
+    ''')
 def exibir_menu():
     texto_menu = '''
-    ===========================
-    1 = teste 
-    2 = testar outra opção
-    3 = sair
-    ===========================
+    1 = teste de letras
+    2 = teste de letras de multiplas linhas
+    3 = teste de numeros
+    4 = teste de numeros de multiplas linhas
+    5 = sair
     '''
     print(texto_menu)
 
@@ -23,10 +39,14 @@ while True:
     escolha = input("=> ")
 
     if escolha == "1":
-        test()
+        teste1()
     elif escolha == "2":
-        test2()
+        teste2()
     elif escolha == "3":
+        teste3()
+    elif escolha == "4":
+        teste4()
+    elif escolha == "5":
         confirmacao = input("quer sair mesmo..? ;( (s/n): ")
         
         if confirmacao.upper() == "S":
